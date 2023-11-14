@@ -4,7 +4,7 @@ My basic zettelkasten implementation using 11ty. Requires eleventy-plugin-backli
 
 Converts notes in markdown format to html files, taking care of links and adding backreferences to make one's notes traversable.
 
-Notes should be written as markdown (.md) files and stored in the 'zettel' directory. If you are using linux, you may generate the
+Notes should be written as markdown (.md) files and stored in the 'zettel' directory. Links must be written using the wikilinks format, e.g. if you want to link to a note called 'test' you write '[[test]]'. If you are using linux, you may generate the
 html by running
 
 ``npx @11ty/eleventy``

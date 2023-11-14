@@ -9,8 +9,8 @@
         <main>
             {{ content | parseLinks | safe }}
         </main>
-        <h5>Referenced by:</h5>
-        {% if backlinks %} 
+        {% if backlinks %}
+            <h5>Referenced by:</h5>
             {% for zettel in backlinks %}
                 <a href={{ zettel.url }}>[[{{ zettel.title }}]]</a>
             {% endfor %}

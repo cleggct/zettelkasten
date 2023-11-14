@@ -1,0 +1,3 @@
+zettel/**.md
+_site/**
+node_modules/**

@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "eleventy-plugin-backlinks": "^0.2.1"
+  }
+}

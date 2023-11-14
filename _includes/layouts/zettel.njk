@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h1>{{ title }}</h1>
+    </head>
+    <body>
+        <main>
+            {{ content | parseLinks | safe }}
+        </main>
+        <h5>Referenced by:</h5>
+        {% if backlinks %} 
+            {% for zettel in backlinks %}
+                <a href={{ zettel.url }}>[[{{ zettel.title }}]]</a>
+            {% endfor %}
+        {% endif %}
+    </body>
+</html>

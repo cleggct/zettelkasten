@@ -11,5 +11,10 @@ module.exports = function(eleventyConfig) {
         return content.replace(wikilinkRegExp, '<a href="/zettel/$1/">[[$1]]</a>');
     });
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-
+    
+    return {
+        dir: {
+            input: 'zettel'
+        }
+    }
 };
